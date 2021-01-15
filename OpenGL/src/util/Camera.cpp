@@ -33,6 +33,11 @@ void Camera::setcameraPos(glm::vec3 pos)
 	cameraPos = pos;
 }
 
+void Camera::setcameraFont(glm::vec3 front)
+{
+	cameraFront = front;
+}
+
 void Camera::Update()
 {
 	m_View = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);

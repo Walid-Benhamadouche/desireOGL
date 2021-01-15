@@ -14,6 +14,7 @@ public:
 	glm::vec3 getcameraFront();
 	glm::vec3 getcameraUp();
 	void setcameraPos(glm::vec3 pos);
+	void setcameraFont(glm::vec3 pos);
 	void Update();
 private:
 	glm::mat4 m_View;
